@@ -1,0 +1,68 @@
+---
+
+brew_install_cmd: "ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\""
+brew_bin: "/usr/local/bin/brew"
+brew_cask_bin: "/usr/local/bin/brew-cask"
+brew_packages:
+  - name: autoconf
+  - name: automake
+  - name: bash
+  - name: bash-completion
+  - name: certbot
+  - name: cmake
+  - name: coreutils
+  - name: cscope
+  - name: ctags
+  - name: curl
+  - name: findutils
+  - name: fontconfig
+  - name: freetype
+  - name: fswatch
+  - name: gettext
+  - name: git
+    install_options: "with-gettext,with-pcre,with-persistent-https,with-blk-sha1"
+  - name: git-extras
+  - name: git-lfs
+  - name: git-secrets
+  - name: gnu-sed
+  - name: gnu-tar
+  - name: graphviz
+  - name: htop
+  - name: jq
+  - name: libevent
+  - name: libffi
+  - name: libidn
+  - name: libmpc
+  - name: libpng
+  - name: libxml2
+  - name: libyaml
+  - name: lua
+  - name: luajit
+  - name: phantomjs
+  - name: postgresql
+  - name: python3
+  - name: readline
+  - name: redis
+  - name: s3cmd
+  - name: snappy
+  - name: sqlite
+  - name: the_silver_searcher
+  - name: tmux
+    install_options: "with-utf8proc"
+  - name: tree
+  - name: wget
+  - name: zeromq
+brew_cask_applications:
+  - name: atom
+    install_options: "--force"
+  - name: firefox
+  - name: flux
+  - name: google-chrome
+  - name: google-drive
+  - name: google-hangouts
+  - name: iterm2
+  - name: java
+  - name: keepingyouawake
+  - name: keybase
+  - name: little-snitch
+  - name: tunnelblick

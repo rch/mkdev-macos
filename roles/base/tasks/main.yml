@@ -1,0 +1,55 @@
+---
+
+- name: Prevent .DS_Store
+  command: "defaults write com.apple.desktopservices DSDontWriteNetworkStores true"
+  tags:
+    - base
+
+- name: ssh dir
+  file:
+    path: "{{ home_dir }}/.ssh"
+    state: directory
+  tags:
+    - base
+
+- name: User tmp dir
+  file:
+    path: "{{ home_dir }}/tmp"
+    state: directory
+  tags:
+    - base
+
+- name: local dir
+  file:
+    path: "{{ local_dir }}"
+    state: directory
+  tags:
+    - base
+
+- name: local dev dir
+  file:
+    path: "{{ dev_dir }}"
+    state: directory
+  tags:
+    - base
+
+- name: Project workspace dir
+  file:
+    path: "{{ workspace_dir }}"
+    state: directory
+  tags:
+    - base
+
+- name: Project documents dir
+  file:
+    path: "{{ documents_dir }}"
+    state: directory
+  tags:
+    - base
+
+- name: Project archive dir
+  file:
+    path: "{{ local_archive }}"
+    state: directory
+  tags:
+    - base

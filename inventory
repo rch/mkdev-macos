@@ -1,0 +1,10 @@
+[sierra]
+127.0.0.1
+
+[sierra:vars]
+home_dir="{{ lookup('env', 'HOME') }}"
+local_dir="{{ home_dir }}/local"
+dev_dir="{{ local_dir }}/dev"
+workspace_dir="{{ dev_dir }}/current"
+documents_dir="{{ dev_dir }}/scratch"
+local_archive="{{ dev_dir }}/archive"
