@@ -15,7 +15,7 @@ create a password (https://help.github.com/articles/working-with-ssh-key-passphr
 > cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 
 test
-> ssh <username>@localhost
+> ssh username@localhost
 
 test ansible
 > ansible all -m ping
