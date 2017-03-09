@@ -3,6 +3,7 @@ all: check, provision
 
 check:
 	@xcode-select --install && echo "Installed tools" || /usr/bin/true
+	@brew install ansible
 
 provision:
 	@echo "-----> Running ansible playbook to provision system..."
